@@ -1,0 +1,155 @@
+*{margin: 0;
+
+    padding:0;
+    
+    box-sizing: border-box;
+    font-family: 'AR One Sans', sans-serif;
+    
+    font-family: 'Josefin Sans', sans-serif;
+    
+    font-family: 'Poppins', sans-serif
+    
+    }
+    
+    nav ul li a{
+    
+        text-decoration: none;
+    
+        padding: 15px;
+    
+        color: rgb(0, 0, 0);
+    
+        
+    
+        transition: 0.4s;
+    
+        font-family: 'AR One Sans', sans-serif;
+    
+    font-family: 'Josefin Sans', sans-serif;
+    
+    font-family: 'Poppins', sans-serif;
+    
+       
+    
+    }
+    
+    nav ul{
+    
+        list-style:circle;
+    
+        text-align: center;
+    border-bottom: 1px solid #ccc;
+    
+        border-top: 1px solid #ccc;
+        position: relative;
+    
+    }
+    
+    nav ul li{
+    
+        display: inline-block;
+    
+       
+    
+     
+    
+    }
+    
+    nav ul li:hover > a{
+    
+    color: orangered;
+    
+    }
+    
+    .submanu {
+    
+        position: absolute;
+        border-left: 3px solid orangered;
+        display: block;
+      
+        visibility: hidden;
+        opacity: 0;
+        transition: 0.3s;
+    
+    }
+    
+    .submanu li{
+         display:block;
+    
+        text-align: left;
+    
+        width: 250px;
+        border-bottom: 1px solid #ccc;
+        
+      
+    
+        
+    
+    }
+
+nav ul li .submanu li:hover > a{
+        background-color: orangered;
+        color:white
+        
+    
+    }
+    
+
+    nav ul li .submanu li:hover > a{
+        padding: 3px;
+        
+    }
+
+nav ul li:hover > .submanu{
+    opacity: 1;
+    visibility: visible;
+    
+}
+
+
+
+.submanu  .submanu {
+    left: 100%;
+    top: 0%;
+    border-left: 3px solid orangered;
+   
+    
+
+    
+}
+
+nav  ul li .submanu .submanu li .submanu{position: absolute;
+    border-left: 3px solid orangered;
+  display: block;
+    visibility: hidden;
+    opacity: 100;
+    transition: 0.3s;
+        border-bottom: 1px solid #ccc;   
+        list-style:circle;
+        padding-left: 3px;
+        text-align: center;
+     
+    
+}
+/* Same thing just careful while selecting */
+nav  ul li .submanu .submanu li:hover> .submanu{
+    opacity: 1;
+    visibility: visible;
+
+
+}
+/* Same thing just careful while selecting. OR use ID */
+
+.submanu .submanu li {
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+
+
+.submanu li a{
+    padding: 5px;
+}
+
+.submanu .submanu > a{
+    top: 0%;
+}
